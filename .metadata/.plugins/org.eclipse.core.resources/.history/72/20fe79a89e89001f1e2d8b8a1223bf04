@@ -1,0 +1,27 @@
+package com.notification.system.api;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.notification.system.service.BankAccountService;
+
+@Controller
+@RequestMapping("/bank")
+public class NotificationAPI {
+	
+	@Autowired
+	private BankAccountService bankAccountService;
+	
+	@GetMapping("/transaction")
+	public void accountTransaction() {
+		
+	}
+	
+	@GetMapping("/accountstatement")
+	public void accountStatement() {
+		
+	}
+
+}
